@@ -54,7 +54,7 @@
 
 <body>
     <header>
-        <h1 class="w3-xxlarge"><strong>Your Sweet As Art Receipt</strong></h1>
+        <h1 class="w3-xxlarge"><strong>Your Smartphones! Receipt</strong></h1>
     </header>
     <table border="1" bordercolor="#111111" cellpadding="2" cellspacing="0" style="width: 1000px;">
         <tbody>
@@ -86,8 +86,8 @@
                     }
                 }
 
-                //shipping calculation
-                //calculate shipping based on the order; it should be based on the sub-total and use stepped shipping amounts ($2 shipping on a subtotal of up to $50, $5 shipping for an order up to $100, 5% for $100 or more)
+                /*shipping calculation*/
+                //calculate shipping based on order; should be based on the sub-total + use stepped shipping amounts ($2 shipping on a subtotal of maximum $50, $5 shipping for an order to $100, 5% for $100+)
                 if (subTotal <= 50) {
                     shipping = 2;
                 }

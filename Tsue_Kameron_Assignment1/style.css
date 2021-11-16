@@ -42,7 +42,7 @@ section #pTag{
   right: 10px;
   bottom: -3px;
   z-index: 2000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Verdana, serif;
 }
 
 section p{
