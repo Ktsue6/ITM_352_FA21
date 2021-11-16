@@ -88,10 +88,10 @@
 
                 /*shipping calculation*/
                 //calculate shipping based on order; should be based on the sub-total + use stepped shipping amounts ($2 shipping on a subtotal of maximum $50, $5 shipping for an order to $100, 5% for $100+)
-                if (subTotal <= 50) {
+                if (subTotal <= 700) {
                     shipping = 2;
                 }
-                else if (subTotal < 100) {
+                else if (subTotal < 1100) {
                     shipping = 5;
                 }
                 else {
@@ -151,11 +151,11 @@
                     <div><strong>
                             OUR SHIPPING POLICY:
                             <br>
-                            Subtotals $0 - $19.99 will be $5 shipping
+                            Subtotals $0 - $699.99 will be $5 shipping
                             <br>
-                            Subtotals $20 - $49.99 will be $10 shipping
+                            Subtotals $700 - $1099.99 will be $10 shipping
                             <br>
-                            Subtotals over $50 will be charged 5% of the subtotal amount
+                            Subtotals over $1100 will be charged 5% of the subtotal amount
                         </strong>
                     </div>
                 </strong></td>
