@@ -1,0 +1,71 @@
+/* formatting for the products display page */
+
+.header_container {
+    font-family: serif;
+    text-align: center;
+    background-color: steelblue;
+    width: 100vw;
+    color: lightgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome_container {
+    text-align: center;
+    font-family: sans-serif;
+    color: magenta;
+}
+
+.item_container{
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background:brown ;
+    color: white;
+    text-align: right;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.item_name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.item_price, p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90%;
+}
+
+.item_image {
+    width: 250px;
+    height: 250px; 
+    padding: 30px;
+}
+
+input[type="text"] {
+    width: 50px;
+    font-size: 15px;
+    font-family: serif;
+    margin: 10px;
+}
+
+label{
+    font-family: sans-serif;
+}
+
+input[type="submit"]{
+    margin:0 auto;
+    display: block;
+    margin-top: 20px;
+    background-color: navy;
+    color: sandybrown;
+    font-size: 120%;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px;
+}

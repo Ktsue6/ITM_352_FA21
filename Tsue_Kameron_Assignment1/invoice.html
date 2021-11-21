@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchased Items</title>
+    <script src="/products.js"></script>
+    <script src="/product_data_quantity.js"></script>
+    <link rel="stylesheet" href="./invoice_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<!-- This file will create invoices for client's orders -->
+
+<style>
+    html, body {
+        background-color: purple;
+    }
+</style>
+
+<body>
+
+    <h2>We thank you for shopping with us at Kameron's Smartphone Store!</h2>
+    <h3>We hope to see you again next time you need a new phone.</h3>
+    <h4>:-)</h4>
+    <br>
+    <br>
+
+
+    <table>
+        <thead>
+            <th>
+                Item
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Extended Price
+            </th>
+        </thead>
+
+        <script>
+
+            //setting the subtotal to 0
+            sub_total = 0;
+
+            //create the rows to display the data of purchased products
+            function generate_item_rows() {
+
+                for (i in products_array) {
+                    //if quantity provided for products= 0, then continue. Do not create an invoice row
+                    if (quantity_arr[i] == 0) {
+                        continue;
+                    }
+                    else {
+                        // To calculate the extended price by multiplying its price & quantity
+                        extended_price = products_array[i]["price"] * quantity_array[i];
+                        //add new extended price to existing subtotal 
+                        sub_total = sub_total + extended_price;
+                        document.write(`
+                        <tr>
+                        <td>${products_array[i]["name"]}</td>
+                        <td>${quantity_array[i]}</td>
+                        <td>$${products_array[i]["price"]}</td>
+                        <td>$${eval(extended_price).toFixed(2)}</td>
+                        </tr>
+                        `)
+                    }
+                }
+            }
+            //execute the function to build the rows for invoice
+            generate_item_rows();
+
+
+            //compute tax
+            var tax = sub_total * 0.04712;
+
+            // initialize shipping cost variable
+            var shipping;
+
+            // If the total is less than $1,000 then the shipping will be $25 
+            if (sub_total <= $1000) {
+                shipping = 25;
+
+            // For every $500 over the $1000 the customer will be charged and extra $0.25
+            } else {
+                shipping = ((sub_total - 1) * 0.25) + 25;
+            }
+
+            //calculate the grand total 
+            var total = tax + sub_total + shipping;
+
+
+
+// to create the document.write and table for the subtotal, tax, shipping and grand total
+            document.write(`
+                    <tr>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Sub-total</td>
+                    <td>$${sub_total.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                    <td><span>Tax @ 4.5%</span></td>
+                    <td>$${tax.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                    <td>Shipping</td>
+                    <td>$${shipping.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$${total.toFixed(2)}</strong></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                        `);
+        </script>
+    </table>
+<br>
+
+<p>Kameron's Smartphone Store Shipping Policy
+    <br>
+    >All orders $1000 or less: $25
+    <br>
+    > add an additional 25&#162; for every $500 over the $1000</p>
+<p>Shipping Policy Example
+    <br>
+    >if you spend $3000 then your shipping cost will be $26</p>
+
+</body>
+</html>
