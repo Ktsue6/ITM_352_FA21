@@ -158,7 +158,7 @@ app.get("/invoice", function (req, res, next) {
         var mailOptions = {
             from: "candy_store@bogus.com",
             to: user.email,
-            subject: "Your sweet as art invoice",
+            subject: "Your Cup Store invoice",
             html: invoice_str,
         };
 
