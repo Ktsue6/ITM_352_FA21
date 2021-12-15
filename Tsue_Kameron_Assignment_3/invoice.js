@@ -1,6 +1,6 @@
 let generateInvoice = function (products) {
     let invoiceTxt = `<header style="text-align:center;">
-            <h1><strong>Your Sweet As Art Receipt</strong></h1>
+            <h1><strong>Your Cup Store Receipt</strong></h1>
         </header>
         <div style="text-align:center;">
         <table border="1" bordercolor="#111111" cellpadding="2" cellspacing="0" style="margin: auto;">
