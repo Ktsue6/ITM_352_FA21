@@ -1,0 +1,161 @@
+{"tumbler": [
+    {
+       "id": "tum1",
+       "name": "Keiki",
+       "price": 4.00,
+       "image": "./images/tum1.jpeg",
+       "disc": "4oz"
+   },
+
+    {
+       "id": "tum2",
+       "name": "Average Joe",
+       "price": 6.00,
+       "image": "./images/tum2.jpeg",
+       "disc": "8oz"
+   },
+
+    {
+       "id": "tum3",
+       "name": "Meh",
+       "price": 14.00,
+       "image": "./images/tum3.jpeg",
+       "disc": "16oz."
+   },
+
+    {
+       "id": "tum4",
+       "name": "Big",
+       "price": 18.00,
+       "image": "./images/tum4.jpeg",
+       "disc": "20oz"
+   },
+
+    {
+       "id": "tum5",
+       "name": "Sumo!",
+       "price": 37.00,
+       "image": "./images/tum5.jpeg",
+       "disc": "40oz"
+   }
+],"mug": [
+   {
+       "id": "mug1",
+       "name": "Extra Small",
+       "price": 7.50,
+       "image": "./images/mug1.jpeg",
+       "disc": "Yeah, It's small."
+   },
+
+    {
+       "id": "mug2",
+       "name": "Small",
+       "price": 9.00,
+       "image": "./images/mug2.jpeg",
+       "disc": "Yeah, It's small."
+   },
+
+    {
+       "id": "mug3",
+       "name": "Medium",
+       "price": 10.50,
+       "image": "./images/mug3.jpeg",
+       "disc": "Not too little yet not too much"
+   },
+
+    {
+       "id": "mug4",
+       "name": "Large",
+       "price": 12.00,
+       "image": "./images/mug4.jpeg",
+       "disc": "Getting big"
+   },
+
+    {
+       "id": "mug5",
+       "name": "Extra Large",
+       "price": 13.50,
+       "image": "./images/mug5.jpeg",
+       "disc": "The mega one"
+   }
+],"flask": [
+    {
+       "id": "flask1",
+       "name": "Kiddo Size",
+       "price": 22.00,
+       "image": "./images/flask1.jpeg",
+       "disc": "Easily portable - 16oz"
+   },
+
+    {
+       "id": "flask2",
+       "name": "Smallish",
+       "price": 28.00,
+       "image": "./images/flask2.jpeg",
+       "disc": "Made for the people who don't want big ones - 24oz"
+   },
+
+    {
+       "id": "flask3",
+       "name": "Normal",
+       "price": 35.00,
+       "image": "./images/flask3.jpeg",
+       "disc": "Smaller normal 32oz"
+   },
+
+    {
+       "id": "flask4",
+       "name": "Larger Normal",
+       "price": 45.00,
+       "image": "./images/flask4.jpeg",
+       "disc": "Your larger normal 40oz"
+   },
+
+    {
+       "id": "flask5",
+       "name": "Big Wave",
+       "price": 70.00,
+       "image": "./images/flask5.jpeg",
+       "disc": "Can hold 64oz"
+   }
+],"clear cup": [
+    {
+       "id": "cc1",
+       "name": "light",
+       "price": 5.00,
+       "image": "./images/cc1.jpeg",
+       "disc": "Classic size - 8oz"
+   },
+
+    {
+       "id": "cc2",
+       "name": "Average",
+       "price": 6.00,
+       "image": "./images/cc2.jpeg",
+       "disc": "Fits a 12oz can"
+   },
+
+    {
+       "id": "cc3",
+       "name": "Doubles",
+       "price": 8.00,
+       "image": "./images/cc3.jpeg",
+       "disc": "Fits a 16oz can"
+   },
+
+    {
+       "id": "cc4",
+       "name": "Slightly Larger",
+       "price": 11.00,
+       "image": "./images/cc4.jpeg",
+       "disc": "Fits a 24oz can"
+   },
+
+    {
+       "id": "cc5",
+       "name": "The Big One",
+       "price": 12.00,
+       "image": "./images/cc5.jpeg",
+       "disc": "Holds 32oz"
+   }
+]}

@@ -1,0 +1,17 @@
+h1, h3 {
+color: yellowgreen;    
+}
+
+body {
+    text-align: center;
+    background: black;
+}
+
+img {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+img:hover {
+    box-shadow: 0 0 5px 1px navy;
+}
